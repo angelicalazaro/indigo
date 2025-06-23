@@ -1,6 +1,5 @@
-// frontend/indigo/src/app/page.tsx
-
 import React from "react";
+import { API_BASE_URL } from "./lib/api";
 
 type Product = {
   id: number;
@@ -10,7 +9,7 @@ type Product = {
 };
 
 async function fetchProducts(): Promise<Product[]> {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products`);
+  const res = await fetch(`${API_BASE_URL}/products`);
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }
