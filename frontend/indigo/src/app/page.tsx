@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import React from "react";
-import { API_BASE_URL } from "./lib/api";
+import { getApiBaseUrl } from "./lib/api";
 
 type Product = {
   id: number;
@@ -11,8 +11,8 @@ type Product = {
 };
 
 async function fetchProducts(): Promise<Product[]> {
-  console.log("🔗 API_BASE_URL =", API_BASE_URL);
-  const res = await fetch(`${API_BASE_URL}/products`);
+  const baseUrl = await getApiBaseUrl();
+  const res = await fetch(`${baseUrl}/products`);
   if (!res.ok) {
     throw new Error("Failed to fetch products");
   }
