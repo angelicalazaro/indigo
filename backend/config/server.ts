@@ -4,5 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: env("PUBLIC_URL", "https://indigo-v3em.onrender.com"),
+  url: env("PUBLIC_URL", "https://better-basket-fadbb6f743.strapiapp.com"),
 });
