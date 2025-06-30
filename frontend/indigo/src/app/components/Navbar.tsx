@@ -11,11 +11,12 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   const menuItems = [
-    { href: "#hero", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#projects", label: "Projects" },
-/*     { href: "#blogs", label: "Blog" }, */
-    { href: "#contact", label: "Contact" },
+    { href: "#hero", label: "INICIO" },
+    { href: "#about", label: "PRODUCTOS" },
+    { href: "#projects", label: "TALLERES" },
+    /*     { href: "#blogs", label: "Blog" }, */
+    { href: "#contact", label: "TIENDA" },
+    { href: "#contact", label: "QUIÉNES SOMOS" },
   ];
   return (
     <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50">
@@ -23,7 +24,7 @@ const Navbar = () => {
         {/* Desktop menu */}
         <div className="flex items-center justify-between h-16">
           <a href="#hero" className="text-xl font-bold text-primary">
-            Portfolio Angelica LAZARO
+            Indigo Mascotas
           </a>
           {/* Desktop menus */}
           <div className="hidden md:flex items-center space-x-8">
