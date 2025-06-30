@@ -33,6 +33,7 @@ export default async function HomePage() {
     <main>
       <About />
       <Designs />
+      
       <Products />
       <Shop />
       <Footer />
